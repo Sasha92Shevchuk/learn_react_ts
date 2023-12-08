@@ -15,10 +15,6 @@ function App() {
     const newTodo = { id: Date.now(), text };
     setTodos([...todos, newTodo]);
   };
-  const test = (text: string) => {
-    const newTodo = { id: Date.now(), text };
-    setTodos([...todos, newTodo]);
-  };
 
   const deleteTodo = (id: number) => {
     const newTodos = todos.filter((todo) => todo.id !== id);
